@@ -1,0 +1,572 @@
+@import url('satoshi.css');
+@import url('nippo.css');
+@import url('header.css');
+@import url('anim.css');
+@import url('night-mode.css');
+
+:root {
+    --light-gold: #FFFFF7;
+    --dark-gold: #101000;
+    --gold: #FFD500;
+    --purple: #BF00FF;
+    --violet: #8F00FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Satoshi-Regular';
+    background-color: var(--light-gold);
+    color: var(--dark-gold);
+    transition: background-color 0.5s;
+}
+
+main {
+    margin: 0px 120px;
+
+}
+
+h1 {
+    font-family: 'Nippo-Bold';
+    font-size: 10em;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Nippo-Extralight';
+    font-size: 4em;
+    margin-bottom: 80px;
+}
+
+h3 {
+    font-family: 'Nippo-Regular';
+    font-size: 2em;
+}
+
+section {
+    padding-top: 5em;
+}
+
+#accueil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/************* A PROPOS *****************/
+#a-propos article:first-child {
+    padding: 90px;
+}
+
+
+#a-propos .presentation {
+    background-color: var(--dark-gold);
+    color: var(--light-gold);
+    padding: 80px 100px;
+    font-size: 1.5em;
+    position: relative;
+    margin-bottom: 160px;
+}
+
+@media screen and (min-width: 970px) {
+    #a-propos .presentation::before {
+        border: 5px solid var(--dark-gold);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -90px;
+        width: 60px;
+    }
+
+    #a-propos .presentation::after {
+        border: 5px solid var(--dark-gold);
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -90px;
+        width: 60px;
+    }
+
+    #a-propos .presentation p::before {
+        border: 5px solid var(--dark-gold);
+        content: "";
+        position: absolute;
+        top: -60px;
+        left: -30px;
+        width: 60px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    #a-propos .presentation p::after {
+        border: 5px solid var(--dark-gold);
+        content: "";
+        position: absolute;
+        bottom: -60px;
+        right: -30px;
+        width: 60px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+
+#a-propos .presentation p {
+    margin: 0;
+}
+
+#a-propos .cv a {
+    border: 8px solid var(--gold);
+    background-color: var(--dark-gold);
+    color: var(--light-gold);
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+    font-size: 2.5em;
+    display: block;
+}
+
+#a-propos .cv a:hover {
+    border: 8px solid var(--gold);
+    background-color: var(--light-gold);
+    color: var(--dark-gold);
+}
+
+#a-propos .competences {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+#a-propos h2 {
+    margin-bottom: 80px;
+    position: relative;
+    width: fit-content
+}
+
+#a-propos h2::before {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+#a-propos h2::after {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+#a-propos .competences div {
+    width: 50%;
+    text-align: center;
+    list-style: none;
+}
+
+#a-propos .competences>div:first-child {
+    border-right: 5px solid var(--dark-gold);
+}
+
+#a-propos .competences .approfondi div,
+#a-propos .competences .fondamental div {
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.quinconce {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quinconce li {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.quinconce li:nth-child(odd) {
+    align-self: flex-start;
+    text-align: end;
+    width: 50%;
+}
+
+.quinconce li:nth-child(even) {
+    align-self: flex-end;
+    text-align: start;
+    width: 50%;
+}
+
+.quinconce li span {
+    background-color: var(--violet);
+    border: 2px solid var(--violet);
+    color: var(--light-gold);
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/******************* REALISATIONS **************************/
+#realisations h2 {
+    position: relative;
+    width: fit-content;
+}
+
+#realisations h2::before {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+}
+
+#realisations h2::after {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+}
+
+#realisations .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+#realisations .container .card {
+    perspective: 1000px;
+    width: 400px;
+    height: 600px;
+
+}
+
+#realisations .container .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: var(--light-gold);
+}
+
+
+
+#realisations .container .card-inner-front,
+#realisations .container .card-inner-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgb(30, 30, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(20% 0%,
+            80% 0.00%,
+            100% 10%,
+            100% 90%,
+            80% 100%,
+            20% 100%,
+            0% 90%,
+            0% 10%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#realisations .container .card-inner-front {
+    align-items: end;
+}
+
+#realisations .container .card-inner-front h3 {
+    margin-bottom: 20%;
+}
+
+#realisations .container .card-inner-front h3:hover a {
+    color: var(--gold)
+}
+
+#realisations .container .card-inner-back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+#realisations .container .card:nth-child(1) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/paradoxe.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(2) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/whatdoyoustamp3.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(3) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/ei3.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(4) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/asmatane.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(5) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/cuej2.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(6) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/symfony1.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(7) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/borne1.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+#realisations .container .card .outils {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#realisations .container .card .outils p {
+    background-color: var(--violet);
+    border: 2px solid var(--violet);
+    color: var(--light-gold);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#realisations .container .card-inner-front a {
+    text-decoration: none;
+    color: var(--light-gold)
+}
+
+#realisations .container .card-inner-back a {
+    border: 2px solid var(--gold);
+    padding: 10px 50px;
+    color: var(--gold);
+    font-size: 1.2em;
+}
+
+#realisations .container .card-inner-back a:hover {
+    background-color: var(--gold);
+    color: var(--dark-gold);
+    font-family: 'Satoshi-Bold';
+}
+
+
+
+/******************* CONTACT **********************/
+
+#contact {
+    height: 700px;
+}
+
+#contact h2 {
+    position: relative;
+    width: fit-content;
+}
+
+#contact h2::before {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+#contact h2::after {
+    border: 5px solid var(--purple);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+#contact .informations {
+    margin-left: 90px;
+    margin-bottom: 160px;
+}
+
+#contact .informations div {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#contact p {
+    font-size: 2.5em;
+}
+
+#contact .informations img {
+    padding-right: 20px;
+    width: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: var(--light-gold);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 970px) {
+    main {
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 5em;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #accueil {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #accueil h2 {
+        line-height: 1;
+    }
+
+    #a-propos article:first-child {
+        padding: 0;
+        margin-bottom: 120px;
+    }
+
+    #a-propos .presentation {
+        padding: 80px 40px;
+        font-size: 1.2em;
+    }
+
+    #a-propos .competences {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #a-propos .competences div {
+        width: 80%;
+    }
+
+    #a-propos .competences>div:first-child {
+        border-right: none;
+        border-bottom: 5px solid var(--dark-gold);
+        padding-bottom: 2em;
+    }
+
+    .quinconce li {
+        font-size: 1.3em;
+    }
+
+    #a-propos .competences .approfondi div,
+    #a-propos .competences .fondamental div {
+        display: block;
+    }
+
+    #contact h2::before,
+    #contact h2::after {
+        width: 50px;
+    }
+
+    #contact .informations {
+        margin: 0;
+    }
+
+    #contact .informations div {
+        justify-content: center;
+    }
+
+    #contact p {
+        font-size: 1.5em;
+    }
+
+    #contact .informations img {
+        width: 40px;
+    }
+}

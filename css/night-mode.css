@@ -1,0 +1,57 @@
+/* MODE SOMBRE */
+.night-mode {
+    background-color: var(--dark-gold);
+    color: var(--light-gold);
+}
+
+.night-mode nav li a {
+    color: var(--dark-gold);
+}
+
+.night-mode #a-propos .presentation {
+    border: 4px solid var(--light-gold);
+}
+
+.night-mode #a-propos .presentation::before,
+.night-mode #a-propos .presentation::after,
+.night-mode #a-propos .presentation p::before,
+.night-mode #a-propos .presentation p::after {
+    border: 5px solid var(--light-gold)
+}
+
+.night-mode #a-propos .competences>div:first-child {
+    border-right: 5px solid var(--light-gold);
+}
+
+.night-mode footer {
+    background-image: url(../img/footer-night.svg);
+    color: var(--dark-gold);
+}
+
+.night-mode .croix svg line {
+    stroke: var(--light-gold);
+}
+
+/* MODE SOMBRE RESPONSIVE */
+@media screen and (min-width: 970px) {
+    .night-mode header {
+        background-image: url(../img/header-night.svg);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .night-mode .menu-icon svg line {
+        stroke: var(--light-gold);
+    }
+
+    .night-mode header,
+    .night-mode nav li a {
+        color: var(--light-gold)
+    }
+
+    .night-mode #a-propos .competences>div:first-child {
+        border-right: none;
+        border-bottom: 5px solid var(--light-gold);
+    }
+
+}

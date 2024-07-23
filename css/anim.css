@@ -1,0 +1,19 @@
+/* Animation flip card, seulement si autorisée et en desktop */
+@media (prefers-reduced-motion: no-preference) {
+
+    @media screen and (min-width: 970px) {
+        #realisations .container .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        #realisations .container .card:hover .card-inner {
+            transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+        }
+    }
+
+}

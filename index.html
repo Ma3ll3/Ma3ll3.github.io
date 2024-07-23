@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css"/>
+    <script src="js/night-mode.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <title>Portfolio Maëlle Falch – développeuse web</title>
+    <meta name="description" content="En 3ème année d'un double diplôme dans le domaine du multimédia, au Québec et en France, Maëlle Falch est intéressée par le développement web.">
+    <meta property="og:title" content="Portfolio Maëlle Falch – développeuse web" />
+    <meta property="og:description" content="En 3ème année d'un double diplôme dans le domaine du multimédia, au Québec et en France, Maëlle Falch est intéressée par le développement web." />
+    <meta property="og:image" content="img/accueil.png" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <svg width="75" height="49" viewBox="0 0 75 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <desc>icon du menu, cliquer pour le déplier</desc>
+                <line y1="5" x2="74.9533" y2="5" stroke="black" stroke-width="10"/>
+                <line y1="24.5" x2="74.9533" y2="24.5" stroke="black" stroke-width="10"/>
+                <line x1="25" y1="44" x2="75" y2="44" stroke="black" stroke-width="10"/>
+                </svg>
+            <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <desc>icon du menu, cliquer pour le plier</desc>
+                <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10" />
+                <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10" />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil" class="onscreen">Accueil</a></li>
+                <li><a href="index.html#a-propos">À propos</a></li>
+                <li><a href="index.html#realisations">Réalisations</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" onclick="toggleMode()">
+                    <span class="slider"></span>
+                </label>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h1>Maëlle Falch</h1>
+            <h2 id="textshow"></h2>
+        </section>
+        <section id="a-propos">
+            <article>
+                <div class="presentation">
+                    <p>Je m'appelle Maëlle et je suis étudiante en mobilité internationale dans le domaine du multimédia et de l'internet. Au cours de mon cursus, j'ai développé de l'intérêt pour le développement web, que ce soit en front ou en back. J'aime la logique et les défis, alors j'espère que mon profil vous plaira.
+                    </p>
+                </div>
+                <div class="cv">
+                    <a href="img/FALCH-CV-2024.pdf" target="_blank">Voir mon CV</a>
+                </div>
+            </article>
+            <article>
+                <h2>Compétences</h2>
+                <div class="competences">
+                    <div class="approfondi">
+                        <div>
+                            <h3>Level appronfondi</h3>
+                            <img src="img/starfull.png">
+                        </div>
+                        <ul class="quinconce">
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Accessibilité</span></li>
+                            <li><span>WordPress</span></li>
+                            <li><span>Illustrator</span></li>
+                            <li><span>PHP</span></li>
+                        </ul>
+                    </div>
+                    <div class="fondamental">
+                        <div>
+                            <h3>Level fondamental</h3>
+                            <img src="img/starempty.png">
+                        </div>
+                        <ul class="quinconce">
+                            <li><span>MySQL</span></li>
+                            <li><span>Symfony</span></li>
+                            <li><span>UX</span></li>
+                            <li><span>SEO</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>PhaserJS</span></li>
+                            <li><span>Sass</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="realisations">
+            <h2>Réalisations</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="onenightinparadoxe.html">One Night In Paradoxe</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>One Night In Paradoxe</h3>
+                            <div class="outils">
+                                <p>PhaserJS</p>
+                                <p>Socket.io</p>
+                                <p>GitHub</p>
+                            </div>
+                            <a href="onenightinparadoxe.html">Voir plus</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="card">
+                        <div class="card-inner">
+                            <div class="card-inner-front">
+                                <h3><a href="webjam.html">Webjam</a></h3>
+                            </div>
+                            <div class="card-inner-back">
+                                <h3>Webjam</h3>
+                                <div class="outils">
+                                    <p>JavaScript</p>
+                                    <p>GitHub</p>
+                                </div>
+                                <a href="webjam.html">Voir plus</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="ei.html">Euro-Information</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>Euro-Information</h3>
+                            <div class="outils">
+                                <p>JavaScript</p>
+                                <p>Accessibilité</p>
+                            </div>
+                            <a href="ei.html">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="cuej.html">A.S. Matane</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>A.S. Matane</h3>
+                            <div class="outils">
+                                <p>WordPress</p>
+                                <p>Thème personnalisé</p>
+                                <p>ACF</p>
+                            </div>
+                            <a href="asmatane.html">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="cuej.html">CUEJ</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>CUEJ</h3>
+                            <div class="outils">
+                                <p>CMS</p>
+                                <p>PHP</p>
+                                <p>SQL</p>
+                            </div>
+                            <a href="cuej.html">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="symfony.html">Symfony</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>Symfony</h3>
+                            <div class="outils">
+                                <p>Symfony</p>
+                            </div>
+                            <a href="symfony.html">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-inner-front">
+                            <h3><a href="borne.html">Borne interactive</a></h3>
+                        </div>
+                        <div class="card-inner-back">
+                            <h3>Borne interactive</h3>
+                            <div class="outils">
+                                <p>JavaScript</p>
+                            </div>
+                            <a href="borne.html">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="informations">
+                <div><img src="img/tel-icone.svg" alt="icone de téléphone"><p>+33 6.06.47.52.43</p></div>
+                <div><img src="img/mail-icone.svg" alt="icone d'email">
+                <p>falch.maelle@gmail.com</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Maëlle Falch - Copyright © 2024</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script>
+    new TypeIt("#textshow", {
+        speed: 50,
+        startDelay: 900,
+        waitUntilVisible: true,
+    }).type("Motivée, rigoureuse, créative", { delay: 400 })
+    .pause(200)
+    .type("...", { delay: 400 })
+    .pause(500)
+    .delete(32, { delay: 900 })
+    .type("Développeuse web.")
+    .go();
+</script>
+</html>

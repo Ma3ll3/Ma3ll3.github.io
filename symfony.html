@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/realisation.css" />
+    <script src="js/night-mode.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <script src="js/realisation.js" defer></script>
+    <title>Maëlle Falch | Projet utilisant Symfony</title>
+    <meta name="description" content="Motivée, rigoureuse et créative, découvrez mes projets dans le domaine du multimédia.">
+    <meta property="og:title" content="Maëlle Falch | Projet utilisant Symfony" />
+    <meta property="og:description" content="Motivée, rigoureuse et créative, découvrez mes projets dans le domaine du multimédia." />
+    <meta property="og:image" content="img/symfony1.png" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <svg width="75" height="49" viewBox="0 0 75 49" fill="none" xmlns="http://www.w3.org/2000/svg" alt="icon du menu replié">
+                <desc>icon du menu, cliquer pour le déplier</desc>
+                <line y1="5" x2="74.9533" y2="5" stroke="black" stroke-width="10"/>
+                <line y1="24.5" x2="74.9533" y2="24.5" stroke="black" stroke-width="10"/>
+                <line x1="25" y1="44" x2="75" y2="44" stroke="black" stroke-width="10"/>
+                </svg>
+            <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <desc>icon du menu, cliquer pour le plier</desc>
+                <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10" />
+                <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10" />
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#a-propos">À propos</a></li>
+                <li><a href="index.html#realisations" class="onscreen">Réalisations</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" onclick="toggleMode()">
+                    <span class="slider"></span>
+                </label>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="details-realisations">
+            <a href="index.html#realisations" class="croix">
+                <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <desc>icon du croix, cliquer pour revenir à l'accueil</desc>
+                    <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10"/>
+                    <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10"/>
+                </svg>
+            </a>
+            <h2>Projet Symfony</h2>
+            <div class="outils">
+                <p>Symfony</p>
+                <p>JavaScript</p>
+                <p>SQL</p>
+                <p>PHP</p>
+            </div>
+            <div class="details">
+                <h3>En bref</h3>
+                <p>En deuxième année du Bachelor Universitaire Technologique : Métiers du Multimédia et de l'Internet, nous avons dû développer individuellement un site internet avec Symfony. Le site permet d'acheter, d'échanger ou de réserver des “produits”. Les produits achetés, échangés ou réservés sont placés dans un “panier” lié à l'utilisateur connecté. Il fallait également rajouter un "back-office" pour le côté administrateur.</p>
+                <h3>Mon projet</h3>
+                <p>J'ai décidé de créer un site fictif de "Love letters" de personnages du jeu Genshin Impact. Toutes les images viennent du jeu Genshin Impact. Pour se connecter en tant qu'user, il faut mettre "user" et "456".</p>
+            </div>
+            <div class="lien">
+                <a href="https://genshinloveletters.falch.etu.mmi-unistra.fr/genshin/" target="_blank">Lien vers le projet</a>
+            </div>
+            <div class="galerie">
+                <img src="img/symfony1.png"class="myImg" alt="Page d'accueil du site.">
+                <img src="./img/symfony2.png" class="myImg" alt="Exemple de création d'un nouveau produit en étant connecté en tant qu'administrateur.">
+                <img src="img/symfony3.png" class="myImg" alt="Exemple de la page panier.">
+            </div>
+            <div id="showGalerie" class="showGalerie">
+                <span class="close croix">
+                    <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <desc>icon du croix, cliquer pour fermer l'image</desc>
+                    <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10" />
+                        <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10" />
+                    </svg>
+                </span>
+                <figure>
+                    <img class="show-content" id="img01">
+                    <figcaption id="caption"></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Maëlle Falch - Copyright © 2024</p>
+    </footer>
+</body>
+
+</html>
