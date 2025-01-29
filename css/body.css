@@ -187,33 +187,32 @@ section {
 .quinconce {
     list-style: none;
     padding: 0;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    width: 100%;
+    width: 50%;
 }
 
 .quinconce li {
     text-align: center;
-    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.quinconce li:nth-child(odd) {
+.quinconce li:nth-of-type(odd) {
     align-self: flex-start;
     text-align: end;
     width: 50%;
 }
 
-.quinconce li:nth-child(even) {
+.quinconce li:nth-of-type(even) {
     align-self: flex-end;
     text-align: start;
     width: 50%;
 }
 
-.quinconce li span {
+.quinconce li button {
     background-color: var(--violet);
     border: 2px solid var(--violet);
     color: var(--light-gold);
@@ -223,6 +222,43 @@ section {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.quinconce li button:hover {
+    background-color: var(--gold);
+}
+
+.quinconce li button[aria-expanded="true"] {
+    background-color: var(--gold);
+    border: 2px solid var(--gold);
+}
+
+
+#a-propos .competences-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#a-propos .competences-details .hidden {
+    display: none;
+}
+
+#a-propos .competences-details div {
+    border-left: 3px solid var(--gold);
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+#a-propos .competences-details div a {
+    color: var(--violet);
+}
+
+#a-propos .competences-details div a:hover {
+    color: var(--gold);
 }
 
 /******************* REALISATIONS **************************/
@@ -510,23 +546,24 @@ footer {
         gap: 2em;
     }
 
-    #a-propos .competences div {
-        width: 80%;
-    }
-
-    #a-propos .competences>div:first-child {
-        border-right: none;
-        border-bottom: 5px solid var(--dark-gold);
-        padding-bottom: 2em;
-    }
-
-    .quinconce li {
+    #a-propos .mads div {
+        width: 100%;
+        margin-bottom: 40px;
+        border-top: 3px solid var(--gold);
+        padding-top: 10px;
         font-size: 1.3em;
     }
 
-    #a-propos .competences .approfondi div,
-    #a-propos .competences .fondamental div {
-        display: block;
+    #a-propos .mads div a {
+        color: var(--violet);
+    }
+
+    #a-propos .mads div a:hover {
+        color: var(--gold);
+    }
+
+    .quinconce li button {
+        font-size: 1.5em;
     }
 
     #contact h2::before,
