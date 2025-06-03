@@ -130,6 +130,9 @@ section {
 #a-propos .presentation p {
     margin: 0;
 }
+#a-propos .presentation p:nth-child(1){
+    padding-bottom: 20px;
+}
 
 #a-propos .cv a {
     border: 8px solid var(--gold);
@@ -357,42 +360,48 @@ section {
 }
 
 #realisations .container .card:nth-child(1) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/paradoxe.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/tankline2.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(2) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/whatdoyoustamp3.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/paradoxe.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(3) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/ei3.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/whatdoyoustamp3.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(4) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/asmatane.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/ei3.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(5) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/borne1.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/asmatane.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(6) .card-inner-front {
-    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/cuej2.png), lightgray 50%;
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/borne1.png), lightgray 50%;
     background-size: cover;
     background-position: top;
 }
 
 #realisations .container .card:nth-child(7) .card-inner-front {
+    background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/cuej2.png), lightgray 50%;
+    background-size: cover;
+    background-position: top;
+}
+
+#realisations .container .card:nth-child(8) .card-inner-front {
     background: linear-gradient(0deg, rgba(16, 16, 0, 0.50) 0%, rgba(16, 16, 0, 0.50) 100%), url(../img/symfony1.png), lightgray 50%;
     background-size: cover;
     background-position: top;

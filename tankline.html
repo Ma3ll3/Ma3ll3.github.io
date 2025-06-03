@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/realisation.css" />
+    <script src="js/night-mode.js" defer></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <script src="js/realisation.js" defer></script>
+    <title>Maëlle Falch | Projet de fin d'études, jeu multijoueur</title>
+    <meta name="description"
+        content="Motivée, curieuse et autonome, découvrez mes projets dans le domaine du multimédia.">
+    <meta property="og:title" content="Maëlle Falch | Projet de fin d'études, jeu multijoueur" />
+    <meta property="og:description"
+        content="Motivée, curieuse et autonome, découvrez mes projets dans le domaine du multimédia." />
+    <meta property="og:image" content="img/paradoxe.png" />
+
+</head>
+
+<body>
+    <div id="menu"></div>
+    <main>
+        <section id="details-realisations">
+            <a href="index.html#realisations" class="croix">
+                <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <desc>icon du croix, cliquer pour revenir à l'accueil</desc>
+                    <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10" />
+                    <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10" />
+                </svg>
+            </a>
+            <h2>TankLine</h2>
+            <div class="outils">
+                <p>Unity</p>
+                <p>C#</p>
+                <p>GitHub</p>
+            </div>
+            <div class="details">
+                <h3>En bref</h3>
+                <p>TankLine est un projet de fin d'études de licence Informatique, en groupe de 7 étudiants en CMI, sur
+                    une moyenne de 150h. Ce
+                    jeu est
+                    inspiré du mini jeu Wii Tanks! et de Tank 1990. Le but est d'éliminer les autres tanks à l'aide
+                    d'obus rebondissants, d'obstacles détruisables ou de buissons où l'on peut se cacher. C'est un jeu
+                    multijoueur en ligne en temps réel jouable sur PC et mobile Android. Le projet est déployé sur le
+                    serveur de l'université de Strasbourg.
+                </p>
+                <h3>Mes tâches</h3>
+                <p>Je me suis occupée de la direction artistique avec un moodboard, le design du logo du jeu et des
+                    icônes, et l'harmonisation des wireframes. J'ai défini plusieurs maps de jeu et implémenté la
+                    logique des obstacles, ainsi que pour sauvegarder et charger une map dans un fichier JSON. J'ai
+                    œuvré également à la gestion du son, notamment dans les paramètres avec le changement des contrôles
+                    au clavier.</p>
+                <p> J'étais chargée d'adapter le jeu PC sur mobile Android, avec le changement des contrôles pour des
+                    joysticks et faire en sorte que tout le jeu soit responsive.</p>
+                <h3>Mon équipe</h3>
+                <p>GALLONE Thibaut, GAUCHARD Baptiste, GAUTHERON Antoine, HERDOIZA Jeronimo, WAKIM Carine, ZAIED Rayen
+                    et moi</p>
+            </div>
+            <div class="lien">
+                <a href="https://github.com/BlueSockets-pi2025/TankLine" target="_blank">Lien vers le projet</a>
+            </div>
+            <div class="galerie">
+                <img src="img/tankline1.png" class="myImg" alt="Menu du jeu, version PC.">
+                <img src="./img/tankline2.png" class="myImg" alt="Capture d'écran au cours d'une partie, version PC.">
+                <img src="img/tankline3.png" class="myImg"
+                    alt="Capture d'écran de la salle d'attente avec la possibilité de changer la couleur du tank, version mobile.">
+            </div>
+            <div id="showGalerie" class="showGalerie">
+                <span class="close croix">
+                    <svg width="62" height="61" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <desc>icon du croix, cliquer pour fermer l'image</desc>
+                        <line x1="4.53553" y1="4.46447" x2="57.5355" y2="57.4645" stroke="#101000" stroke-width="10" />
+                        <line x1="4.46447" y1="57.4645" x2="57.4645" y2="4.46447" stroke="#101000" stroke-width="10" />
+                    </svg>
+                </span>
+                <figure>
+                    <img class="show-content" id="img01">
+                    <figcaption id="caption"></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Maëlle Falch - Copyright © 2025</p>
+    </footer>
+</body>
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            const menuDiv = document.getElementById('menu');
+            menuDiv.outerHTML = data;
+        });
+</script>
+
+</html>
